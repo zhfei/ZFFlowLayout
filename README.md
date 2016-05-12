@@ -1,0 +1,2 @@
+# LeftAlignedCollectionView
+UICollectionView 左对齐流水布局
