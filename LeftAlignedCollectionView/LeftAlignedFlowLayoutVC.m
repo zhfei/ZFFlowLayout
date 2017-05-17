@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  LeftAlignedFlowLayoutVC.m
 //  LeftAlignedCollectionView
 //
 //  Created by zhoufei on 16/5/12.
 //  Copyright © 2016年 zhoufei. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LeftAlignedFlowLayoutVC.h"
 #import "LeftAlignedFlowLayout/LeftAlignedFlowLayout.h"
 #import "Masonry.h"
 #import "NSString+YYAdditions.h"
@@ -17,24 +17,22 @@ static CGFloat  itemMarginWithitem=20;     //cell距离相邻cell距离
 
 static NSString * const reuseIdentifier = @"Cell";
 
-
-
-@interface ViewController ()
+@interface LeftAlignedFlowLayoutVC ()
 @property (nonatomic,strong)NSMutableArray *dataSource;
 @end
 
-@implementation ViewController
+@implementation LeftAlignedFlowLayoutVC
 
 
 - (instancetype)initWithLeftAlignedFlowLayout
 {
     //左对齐流水布局设置
-    LeftAlignedFlowLayout * flow =[[LeftAlignedFlowLayout alloc]init];
-    flow.minimumInteritemSpacing=itemMarginWithitem;
-    flow.sectionInset=UIEdgeInsetsMake(10, ItemMarginWithLeftEdge, 10, ItemMarginWithRightEdge);
-    [flow configLeftAlignedFlowLayoutWithLeftMargin:ItemMarginWithLeftEdge ItemMargin:itemMarginWithitem];
+    LeftAlignedFlowLayout * flow =[LeftAlignedFlowLayout new];
+    [flow configFlowLayoutWithFlowLayoutItemEdgeInsets:(FlowLayoutItemEdgeInsets){20,ItemMarginWithLeftEdge,20,itemMarginWithitem}
+                                     sectionEdgeInsets:(FlowLayoutSectionEdgeInsets){20,ItemMarginWithLeftEdge,20,ItemMarginWithRightEdge}];
     
-    self=[[[self class]alloc]initWithCollectionViewLayout:flow];
+    
+    self = [[[self class]alloc]initWithCollectionViewLayout:flow];
     if (self) {
         self.collectionView.backgroundColor=[UIColor whiteColor];
     }
@@ -45,6 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // Register cell classes
+    self.title = @"左对齐流水布局";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     NSString *string =@"西湖，";

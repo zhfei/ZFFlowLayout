@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LeftAlignedFlowLayoutVC.h
 //  LeftAlignedCollectionView
 //
 //  Created by zhoufei on 16/5/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
+@interface LeftAlignedFlowLayoutVC : UICollectionViewController
 /*!
  *  @author zhoufei
  *

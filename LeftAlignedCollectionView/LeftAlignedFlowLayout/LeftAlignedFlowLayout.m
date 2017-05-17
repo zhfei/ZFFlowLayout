@@ -14,29 +14,17 @@
 @end
 
 @implementation LeftAlignedFlowLayout
-- (CGFloat)leftMargin
-{
-    if (!_leftMargin) {
-        _leftMargin=30;
-    }
+
+- (void)configFlowLayoutWithFlowLayoutItemEdgeInsets:(FlowLayoutItemEdgeInsets)itemEdgeInsets sectionEdgeInsets:(FlowLayoutSectionEdgeInsets)sectionEdgeInsets {
+
+    self.leftMargin = itemEdgeInsets.left;
+    self.itemMargin = itemEdgeInsets.right;
+    self.minimumInteritemSpacing=itemEdgeInsets.right;
+    self.minimumLineSpacing = itemEdgeInsets.bottom;
     
-    return _leftMargin;
+    self.sectionInset = UIEdgeInsetsMake(sectionEdgeInsets.top, sectionEdgeInsets.left, sectionEdgeInsets.bottom, sectionEdgeInsets.right);
 }
 
-- (CGFloat)itemMargin
-{
-    if (!_itemMargin) {
-        _itemMargin=20;
-    }
-    
-    return _itemMargin;
-}
-
-- (void)configLeftAlignedFlowLayoutWithLeftMargin:(CGFloat)leftMargin ItemMargin:(CGFloat)ItemMargin
-{
-    self.leftMargin=leftMargin;
-    self.itemMargin=ItemMargin;
-}
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
