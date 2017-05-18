@@ -7,7 +7,7 @@
 //
 
 #import "LeftAlignedFlowLayoutVC.h"
-#import "LeftAlignedFlowLayout/LeftAlignedFlowLayout.h"
+#import "LeftAlignedFlowLayout.h"
 #import "Masonry.h"
 #import "NSString+YYAdditions.h"
 

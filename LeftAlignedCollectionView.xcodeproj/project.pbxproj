@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		919646481CE4B8EC00E770C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646471CE4B8EC00E770C8 /* main.m */; };
 		9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196464A1CE4B8EC00E770C8 /* AppDelegate.m */; };
-		9196464E1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196464D1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.m */; };
 		919646531CE4B8EC00E770C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919646521CE4B8EC00E770C8 /* Assets.xcassets */; };
 		919646561CE4B8EC00E770C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919646541CE4B8EC00E770C8 /* LaunchScreen.storyboard */; };
 		919646611CE4B8EC00E770C8 /* LeftAlignedCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646601CE4B8EC00E770C8 /* LeftAlignedCollectionViewTests.m */; };
 		9196466E1CE4B92100E770C8 /* LeftAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */; };
 		919646961CE4BB3D00E770C8 /* NSString+YYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */; };
+		91BAE5D81ECD76310004CB4E /* RightAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */; };
+		91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */; };
 		DC66A3471ECC9046009669DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3451ECC9046009669DB /* MainViewController.m */; };
 		DC66A3481ECC9046009669DB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC66A3461ECC9046009669DB /* MainViewController.xib */; };
 		DC66A3611ECC96CB009669DB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A34B1ECC96CB009669DB /* MASCompositeConstraint.m */; };
@@ -43,8 +44,6 @@
 		919646471CE4B8EC00E770C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		919646491CE4B8EC00E770C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9196464A1CE4B8EC00E770C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9196464C1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
-		9196464D1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 		919646521CE4B8EC00E770C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		919646551CE4B8EC00E770C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		919646571CE4B8EC00E770C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +54,10 @@
 		9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayout.m; sourceTree = "<group>"; };
 		919646941CE4BB3D00E770C8 /* NSString+YYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YYAdditions.h"; sourceTree = "<group>"; };
 		919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYAdditions.m"; sourceTree = "<group>"; };
+		91BAE5D61ECD76310004CB4E /* RightAlignedFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAlignedFlowLayout.h; sourceTree = "<group>"; };
+		91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayout.m; sourceTree = "<group>"; };
+		91BAE5D91ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
+		91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 		DC66A3421ECC831E009669DB /* FlowLayoutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutMacro.h; sourceTree = "<group>"; };
 		DC66A3431ECC8365009669DB /* FlowLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutProtocol.h; sourceTree = "<group>"; };
 		DC66A3441ECC9046009669DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -126,11 +129,10 @@
 			children = (
 				DC66A3411ECC82EB009669DB /* Common */,
 				9196466F1CE4BA0D00E770C8 /* Lib */,
+				91BAE5D51ECD760F0004CB4E /* RightAlignedFlowLayout */,
 				9196466B1CE4B92100E770C8 /* LeftAlignedFlowLayout */,
 				919646491CE4B8EC00E770C8 /* AppDelegate.h */,
 				9196464A1CE4B8EC00E770C8 /* AppDelegate.m */,
-				9196464C1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.h */,
-				9196464D1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.m */,
 				DC66A3441ECC9046009669DB /* MainViewController.h */,
 				DC66A3451ECC9046009669DB /* MainViewController.m */,
 				DC66A3461ECC9046009669DB /* MainViewController.xib */,
@@ -162,6 +164,8 @@
 		9196466B1CE4B92100E770C8 /* LeftAlignedFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				91BAE5D91ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.h */,
+				91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */,
 				9196466C1CE4B92100E770C8 /* LeftAlignedFlowLayout.h */,
 				9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */,
 			);
@@ -176,6 +180,15 @@
 				919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		91BAE5D51ECD760F0004CB4E /* RightAlignedFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				91BAE5D61ECD76310004CB4E /* RightAlignedFlowLayout.h */,
+				91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */,
+			);
+			path = RightAlignedFlowLayout;
 			sourceTree = "<group>";
 		};
 		DC66A3411ECC82EB009669DB /* Common */ = {
@@ -266,6 +279,7 @@
 				TargetAttributes = {
 					919646421CE4B8EC00E770C8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SVKNFBR4AF;
 						ProvisioningStyle = Manual;
 					};
 					9196465B1CE4B8EC00E770C8 = {
@@ -321,8 +335,8 @@
 			files = (
 				DC66A3621ECC96CB009669DB /* MASConstraint.m in Sources */,
 				DC66A3651ECC96CB009669DB /* MASViewAttribute.m in Sources */,
+				91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */,
 				DC66A3671ECC96CB009669DB /* NSArray+MASAdditions.m in Sources */,
-				9196464E1CE4B8EC00E770C8 /* LeftAlignedFlowLayoutVC.m in Sources */,
 				DC66A3661ECC96CB009669DB /* MASViewConstraint.m in Sources */,
 				DC66A3641ECC96CB009669DB /* MASLayoutConstraint.m in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
@@ -330,6 +344,7 @@
 				DC66A3691ECC96CB009669DB /* View+MASAdditions.m in Sources */,
 				DC66A3611ECC96CB009669DB /* MASCompositeConstraint.m in Sources */,
 				DC66A3681ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				91BAE5D81ECD76310004CB4E /* RightAlignedFlowLayout.m in Sources */,
 				DC66A3631ECC96CB009669DB /* MASConstraintMaker.m in Sources */,
 				9196466E1CE4B92100E770C8 /* LeftAlignedFlowLayout.m in Sources */,
 				DC66A3471ECC9046009669DB /* MainViewController.m in Sources */,
@@ -453,11 +468,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SVKNFBR4AF;
 				INFOPLIST_FILE = LeftAlignedCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.LeftAlignedCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d8066971-f948-4c1c-afe2-9dc29c2d3c53";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
 			};
 			name = Debug;
 		};
@@ -465,11 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SVKNFBR4AF;
 				INFOPLIST_FILE = LeftAlignedCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.LeftAlignedCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d8066971-f948-4c1c-afe2-9dc29c2d3c53";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
 			};
 			name = Release;
 		};
