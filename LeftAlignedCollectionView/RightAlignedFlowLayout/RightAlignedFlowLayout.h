@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "FlowLayoutProtocol.h"
 
-@interface RightAlignedFlowLayout : UICollectionViewLayout <FlowLayoutProtocol>
+@interface RightAlignedFlowLayout : UICollectionViewFlowLayout <FlowLayoutProtocol>
 
 @end

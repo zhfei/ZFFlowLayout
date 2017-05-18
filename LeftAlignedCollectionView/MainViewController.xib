@@ -34,10 +34,27 @@
                         <action selector="leftAlignBtnAction:" destination="-1" eventType="touchUpInside" id="Tg5-ef-WMK"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoD-Jg-NQC">
+                    <rect key="frame" x="81" y="225" width="158" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Z2Q-5E-eBU"/>
+                        <constraint firstAttribute="width" constant="158" id="uIA-wf-DvN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="右对齐流水布局">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="RightAlignBtnAction:" destination="-1" eventType="touchUpInside" id="GA4-U8-Uo0"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="VoD-Jg-NQC" firstAttribute="top" secondItem="BcU-9A-n8s" secondAttribute="bottom" constant="58" id="8Q9-Yr-8lA"/>
                 <constraint firstItem="BcU-9A-n8s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ey8-h0-aRC"/>
+                <constraint firstItem="VoD-Jg-NQC" firstAttribute="leading" secondItem="BcU-9A-n8s" secondAttribute="leading" id="MUt-x1-rtv"/>
                 <constraint firstItem="BcU-9A-n8s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="137" id="Tpf-zF-2mc"/>
             </constraints>
             <point key="canvasLocation" x="-91" y="-36"/>

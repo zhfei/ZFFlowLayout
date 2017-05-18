@@ -27,6 +27,7 @@
 		DC66A3671ECC96CB009669DB /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35A1ECC96CB009669DB /* NSArray+MASAdditions.m */; };
 		DC66A3681ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35D1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		DC66A3691ECC96CB009669DB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35F1ECC96CB009669DB /* View+MASAdditions.m */; };
+		DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		DC66A35E1ECC96CB009669DB /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		DC66A35F1ECC96CB009669DB /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		DC66A3601ECC96CB009669DB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DCF22A401ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
+		DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 			children = (
 				91BAE5D61ECD76310004CB4E /* RightAlignedFlowLayout.h */,
 				91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */,
+				DCF22A401ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.h */,
+				DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */,
 			);
 			path = RightAlignedFlowLayout;
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */,
 				DC66A3621ECC96CB009669DB /* MASConstraint.m in Sources */,
 				DC66A3651ECC96CB009669DB /* MASViewAttribute.m in Sources */,
 				91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */,

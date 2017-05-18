@@ -8,9 +8,11 @@
 
 #import "MainViewController.h"
 #import "LeftAlignedFlowLayoutVC.h"
+#import "RightAlignedFlowLayoutVC.h"
 
 @interface MainViewController ()
 - (IBAction)leftAlignBtnAction:(id)sender;
+- (IBAction)RightAlignBtnAction:(id)sender;
 
 @end
 
@@ -41,5 +43,10 @@
     
     LeftAlignedFlowLayoutVC * vc = [[LeftAlignedFlowLayoutVC alloc] initWithLeftAlignedFlowLayout];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)RightAlignBtnAction:(id)sender {
+    RightAlignedFlowLayoutVC * rightVC = [[RightAlignedFlowLayoutVC alloc] initWithRightAlignedFlowLayout];
+    [self.navigationController pushViewController:rightVC animated:YES];
 }
 @end
