@@ -33,6 +33,22 @@
 {
     NSMutableArray* attributes = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
     
+    NSMutableArray * subArray = [self groupTheSameLineItems:attributes];
+    
+    [self updateItemAttributeInSigleLine:subArray rect:rect];
+
+    return attributes;
+}
+
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 将同一行的所有元素归并到一个组中
+ *  @param attributes 元素数据
+ *  @return 归并后的结果数组
+ */
+- (NSMutableArray * )groupTheSameLineItems:(NSMutableArray * )attributes {
+    
     NSMutableArray * subArray = [NSMutableArray arrayWithCapacity:attributes.count];
     NSMutableArray * currenArray = [NSMutableArray arrayWithCapacity:attributes.count];
     
@@ -50,7 +66,6 @@
                 [currenArray removeAllObjects];
                 [currenArray addObject:attr];
             }
-            
         }
         
     }
@@ -59,9 +74,21 @@
         [currenArray removeAllObjects];
     }
     
+    return subArray;
+}
+
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 更新每个元素的位置
+ *  @param groupArray 归并后的结果数组
+ *  @param rect       原始布局的rect
+ */
+- (void)updateItemAttributeInSigleLine:(NSMutableArray * )groupArray rect:(CGRect)rect{
+    
     NSMutableArray * modelArray = [NSMutableArray array];
     
-    for (NSArray * array  in subArray) {
+    for (NSArray * array  in groupArray) {
         
         NSInteger count = array.count;
         
@@ -72,15 +99,15 @@
         }
         
         CGFloat leftWith = rect.size.width -self.rightMargin-self.itemMargin*(count-1);
-
+        
         for (int i=0; i<count; i++) {
             
             UICollectionViewLayoutAttributes *attr = [array objectAtIndex:i];
             
-             NSPredicate *predice =[NSPredicate predicateWithFormat:@"index >= %d",i];
+            NSPredicate *predice =[NSPredicate predicateWithFormat:@"index >= %d",i];
             NSArray * resultArray = [modelArray filteredArrayUsingPredicate:predice];
             NSNumber * number = [resultArray valueForKeyPath:@"@sum.width"];
-
+            
             leftWith = rect.size.width -self.rightMargin-self.itemMargin*(count-1-i)-number.doubleValue;
             CGRect frame = attr.frame;
             frame.origin.x = leftWith;
@@ -89,10 +116,7 @@
         }
         [modelArray removeAllObjects];
     }
-    
-    
-    
-    return attributes;
+
 }
 
 
