@@ -7,6 +7,7 @@
 //
 
 #import "RightAlignedFlowLayout.h"
+#import "Attribute.h"
 
 @interface RightAlignedFlowLayout ()
 @property (assign,nonatomic)CGFloat rightMargin;//一行   距离右侧的距离
@@ -58,22 +59,36 @@
         [currenArray removeAllObjects];
     }
     
+    NSMutableArray * modelArray = [NSMutableArray array];
     
-//    for (NSArray * array  in subArray) {
-//        
-//        CGFloat totalWidth = 0;
-//        for (UICollectionViewLayoutAttributes *attr1 in array) {
-//            totalWidth += attr1.size.width;
-//        }
-//        CGFloat leftWith = rect.size.width - self.rightMargin-self.rightMargin-self.itemMargin*(array.count-1)-totalWidth;
-//
-//        for (int i=0; i<[array count]; i++) {
-//            if (i>0) {
-//                UICollectionViewLayoutAttributes *attr = [attributes objectAtIndex:i-1];
-//            }
-//            
-//        }
-//    }
+    for (NSArray * array  in subArray) {
+        
+        NSInteger count = array.count;
+        
+        for (int i = 0; i<count; i++) {
+            UICollectionViewLayoutAttributes *attrOne = array[i];
+            [modelArray addObject:[Attribute AttributeWithIndex:i width:attrOne.size.width]];
+            
+        }
+        
+        CGFloat leftWith = rect.size.width -self.rightMargin-self.itemMargin*(count-1);
+
+        for (int i=0; i<count; i++) {
+            
+            UICollectionViewLayoutAttributes *attr = [array objectAtIndex:i];
+            
+             NSPredicate *predice =[NSPredicate predicateWithFormat:@"index >= %d",i];
+            NSArray * resultArray = [modelArray filteredArrayUsingPredicate:predice];
+            NSNumber * number = [resultArray valueForKeyPath:@"@sum.width"];
+
+            leftWith = rect.size.width -self.rightMargin-self.itemMargin*(count-1-i)-number.doubleValue;
+            CGRect frame = attr.frame;
+            frame.origin.x = leftWith;
+            attr.frame = frame;
+            
+        }
+        [modelArray removeAllObjects];
+    }
     
     
     

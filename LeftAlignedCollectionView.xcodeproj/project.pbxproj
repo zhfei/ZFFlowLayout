@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		919187461ECF04CC00FDC115 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 919187451ECF04CC00FDC115 /* Attribute.m */; };
 		919646481CE4B8EC00E770C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646471CE4B8EC00E770C8 /* main.m */; };
 		9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196464A1CE4B8EC00E770C8 /* AppDelegate.m */; };
 		919646531CE4B8EC00E770C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919646521CE4B8EC00E770C8 /* Assets.xcassets */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		919187441ECF04CC00FDC115 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		919187451ECF04CC00FDC115 /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
 		919646431CE4B8EC00E770C8 /* LeftAlignedCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftAlignedCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919646471CE4B8EC00E770C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		919646491CE4B8EC00E770C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		919187431ECF04B900FDC115 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				919187441ECF04CC00FDC115 /* Attribute.h */,
+				919187451ECF04CC00FDC115 /* Attribute.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9196463A1CE4B8EC00E770C8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 		919646451CE4B8EC00E770C8 /* LeftAlignedCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				919187431ECF04B900FDC115 /* Model */,
 				DC66A3411ECC82EB009669DB /* Common */,
 				9196466F1CE4BA0D00E770C8 /* Lib */,
 				91BAE5D51ECD760F0004CB4E /* RightAlignedFlowLayout */,
@@ -346,6 +359,7 @@
 				DC66A3661ECC96CB009669DB /* MASViewConstraint.m in Sources */,
 				DC66A3641ECC96CB009669DB /* MASLayoutConstraint.m in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
+				919187461ECF04CC00FDC115 /* Attribute.m in Sources */,
 				919646481CE4B8EC00E770C8 /* main.m in Sources */,
 				DC66A3691ECC96CB009669DB /* View+MASAdditions.m in Sources */,
 				DC66A3611ECC96CB009669DB /* MASCompositeConstraint.m in Sources */,
