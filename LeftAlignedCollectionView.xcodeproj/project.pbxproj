@@ -15,13 +15,12 @@
 		919646561CE4B8EC00E770C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919646541CE4B8EC00E770C8 /* LaunchScreen.storyboard */; };
 		919646611CE4B8EC00E770C8 /* LeftAlignedCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646601CE4B8EC00E770C8 /* LeftAlignedCollectionViewTests.m */; };
 		9196466E1CE4B92100E770C8 /* LeftAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */; };
-		919646961CE4BB3D00E770C8 /* NSString+YYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */; };
 		91BAE5D81ECD76310004CB4E /* RightAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */; };
-		91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */; };
 		DC007AE41ED03943003EFDA5 /* LayoutAttributeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DC007AE31ED03943003EFDA5 /* LayoutAttributeTools.m */; };
+		DC2606921ED07FB000451E75 /* FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2606911ED07FB000451E75 /* FlowLayout.m */; };
+		DC2606951ED0A1A100451E75 /* FlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2606941ED0A1A100451E75 /* FlowLayoutVC.m */; };
 		DC66A3471ECC9046009669DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3451ECC9046009669DB /* MainViewController.m */; };
 		DC66A3481ECC9046009669DB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC66A3461ECC9046009669DB /* MainViewController.xib */; };
-		DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,21 +51,19 @@
 		919646621CE4B8EC00E770C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9196466C1CE4B92100E770C8 /* LeftAlignedFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAlignedFlowLayout.h; sourceTree = "<group>"; };
 		9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayout.m; sourceTree = "<group>"; };
-		919646941CE4BB3D00E770C8 /* NSString+YYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YYAdditions.h"; sourceTree = "<group>"; };
-		919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYAdditions.m"; sourceTree = "<group>"; };
 		91BAE5D61ECD76310004CB4E /* RightAlignedFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAlignedFlowLayout.h; sourceTree = "<group>"; };
 		91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayout.m; sourceTree = "<group>"; };
-		91BAE5D91ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
-		91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 		DC007AE21ED03943003EFDA5 /* LayoutAttributeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAttributeTools.h; sourceTree = "<group>"; };
 		DC007AE31ED03943003EFDA5 /* LayoutAttributeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAttributeTools.m; sourceTree = "<group>"; };
+		DC2606901ED07FB000451E75 /* FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayout.h; sourceTree = "<group>"; };
+		DC2606911ED07FB000451E75 /* FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowLayout.m; sourceTree = "<group>"; };
+		DC2606931ED0A1A100451E75 /* FlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutVC.h; sourceTree = "<group>"; };
+		DC2606941ED0A1A100451E75 /* FlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowLayoutVC.m; sourceTree = "<group>"; };
 		DC66A3421ECC831E009669DB /* FlowLayoutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutMacro.h; sourceTree = "<group>"; };
 		DC66A3431ECC8365009669DB /* FlowLayoutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowLayoutProtocol.h; sourceTree = "<group>"; };
 		DC66A3441ECC9046009669DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DC66A3451ECC9046009669DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DC66A3461ECC9046009669DB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		DCF22A401ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
-		DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +128,12 @@
 			children = (
 				919187431ECF04B900FDC115 /* Model */,
 				DC66A3411ECC82EB009669DB /* Common */,
-				9196466F1CE4BA0D00E770C8 /* Lib */,
 				91BAE5D51ECD760F0004CB4E /* RightAlignedFlowLayout */,
 				9196466B1CE4B92100E770C8 /* LeftAlignedFlowLayout */,
 				919646491CE4B8EC00E770C8 /* AppDelegate.h */,
 				9196464A1CE4B8EC00E770C8 /* AppDelegate.m */,
+				DC2606931ED0A1A100451E75 /* FlowLayoutVC.h */,
+				DC2606941ED0A1A100451E75 /* FlowLayoutVC.m */,
 				DC66A3441ECC9046009669DB /* MainViewController.h */,
 				DC66A3451ECC9046009669DB /* MainViewController.m */,
 				DC66A3461ECC9046009669DB /* MainViewController.xib */,
@@ -167,21 +165,10 @@
 		9196466B1CE4B92100E770C8 /* LeftAlignedFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				91BAE5D91ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.h */,
-				91BAE5DA1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m */,
 				9196466C1CE4B92100E770C8 /* LeftAlignedFlowLayout.h */,
 				9196466D1CE4B92100E770C8 /* LeftAlignedFlowLayout.m */,
 			);
 			path = LeftAlignedFlowLayout;
-			sourceTree = "<group>";
-		};
-		9196466F1CE4BA0D00E770C8 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				919646941CE4BB3D00E770C8 /* NSString+YYAdditions.h */,
-				919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		91BAE5D51ECD760F0004CB4E /* RightAlignedFlowLayout */ = {
@@ -189,8 +176,6 @@
 			children = (
 				91BAE5D61ECD76310004CB4E /* RightAlignedFlowLayout.h */,
 				91BAE5D71ECD76310004CB4E /* RightAlignedFlowLayout.m */,
-				DCF22A401ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.h */,
-				DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */,
 			);
 			path = RightAlignedFlowLayout;
 			sourceTree = "<group>";
@@ -202,6 +187,8 @@
 				DC007AE31ED03943003EFDA5 /* LayoutAttributeTools.m */,
 				DC66A3421ECC831E009669DB /* FlowLayoutMacro.h */,
 				DC66A3431ECC8365009669DB /* FlowLayoutProtocol.h */,
+				DC2606901ED07FB000451E75 /* FlowLayout.h */,
+				DC2606911ED07FB000451E75 /* FlowLayout.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -368,16 +355,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */,
-				91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
 				919187461ECF04CC00FDC115 /* Attribute.m in Sources */,
 				919646481CE4B8EC00E770C8 /* main.m in Sources */,
 				DC007AE41ED03943003EFDA5 /* LayoutAttributeTools.m in Sources */,
 				91BAE5D81ECD76310004CB4E /* RightAlignedFlowLayout.m in Sources */,
 				9196466E1CE4B92100E770C8 /* LeftAlignedFlowLayout.m in Sources */,
+				DC2606951ED0A1A100451E75 /* FlowLayoutVC.m in Sources */,
 				DC66A3471ECC9046009669DB /* MainViewController.m in Sources */,
-				919646961CE4BB3D00E770C8 /* NSString+YYAdditions.m in Sources */,
+				DC2606921ED07FB000451E75 /* FlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
