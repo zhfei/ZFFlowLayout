@@ -74,7 +74,8 @@
             NSArray * resultArray = [modelArray filteredArrayUsingPredicate:predice];
             NSNumber * number = [resultArray valueForKeyPath:@"@sum.width"];
             
-            leftWith = self.leftMargin+self.itemMargin*(count-1)+number.doubleValue;
+            leftWith = self.leftMargin+self.itemMargin*i+number.doubleValue;
+            
             CGRect frame = attr.frame;
             frame.origin.x = leftWith;
             attr.frame = frame;

@@ -14,7 +14,7 @@
  *  @author zhoufei
  *
  *  @brief 将同一行的所有元素归并到一个组中
- *  @param attributes 元素数据
+ *  @param attributes 所有元素数据
  *  @return 归并后的结果数组
  */
 + (NSMutableArray * )groupTheSameLineItems:(NSMutableArray * )attributes {
@@ -28,14 +28,12 @@
         if (attr.representedElementKind==nil) {
             
             UICollectionViewLayoutAttributes *lastAttr = [currenArray firstObject];
-            if (!lastAttr || lastAttr.frame.origin.y == attr.frame.origin.y) {
-                
-                [currenArray addObject:attr];
-            } else {
+            if (lastAttr && lastAttr.frame.origin.y != attr.frame.origin.y) {
                 [subArray addObject:[NSArray arrayWithArray:currenArray]];
                 [currenArray removeAllObjects];
-                [currenArray addObject:attr];
             }
+            
+            [currenArray addObject:attr];
         }
         
     }

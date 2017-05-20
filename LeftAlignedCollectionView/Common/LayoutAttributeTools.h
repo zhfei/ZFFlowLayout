@@ -13,7 +13,7 @@
  *  @author zhoufei
  *
  *  @brief 将同一行的所有元素归并到一个组中
- *  @param attributes 元素数据
+ *  @param attributes 所有元素数据
  *  @return 归并后的结果数组
  */
 + (NSMutableArray * )groupTheSameLineItems:(NSMutableArray * )attributes;
