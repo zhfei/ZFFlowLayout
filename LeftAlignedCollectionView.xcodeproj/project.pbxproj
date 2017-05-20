@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D5FC14E93201FFC6B91D0B3 /* libPods-LeftAlignedCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0451120660EB054CE8EB32B9 /* libPods-LeftAlignedCollectionView.a */; };
 		919187461ECF04CC00FDC115 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 919187451ECF04CC00FDC115 /* Attribute.m */; };
 		919646481CE4B8EC00E770C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646471CE4B8EC00E770C8 /* main.m */; };
 		9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196464A1CE4B8EC00E770C8 /* AppDelegate.m */; };
@@ -20,15 +21,6 @@
 		DC007AE41ED03943003EFDA5 /* LayoutAttributeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DC007AE31ED03943003EFDA5 /* LayoutAttributeTools.m */; };
 		DC66A3471ECC9046009669DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3451ECC9046009669DB /* MainViewController.m */; };
 		DC66A3481ECC9046009669DB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC66A3461ECC9046009669DB /* MainViewController.xib */; };
-		DC66A3611ECC96CB009669DB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A34B1ECC96CB009669DB /* MASCompositeConstraint.m */; };
-		DC66A3621ECC96CB009669DB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A34E1ECC96CB009669DB /* MASConstraint.m */; };
-		DC66A3631ECC96CB009669DB /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3501ECC96CB009669DB /* MASConstraintMaker.m */; };
-		DC66A3641ECC96CB009669DB /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3521ECC96CB009669DB /* MASLayoutConstraint.m */; };
-		DC66A3651ECC96CB009669DB /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3561ECC96CB009669DB /* MASViewAttribute.m */; };
-		DC66A3661ECC96CB009669DB /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3581ECC96CB009669DB /* MASViewConstraint.m */; };
-		DC66A3671ECC96CB009669DB /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35A1ECC96CB009669DB /* NSArray+MASAdditions.m */; };
-		DC66A3681ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35D1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		DC66A3691ECC96CB009669DB /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A35F1ECC96CB009669DB /* View+MASAdditions.m */; };
 		DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0451120660EB054CE8EB32B9 /* libPods-LeftAlignedCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeftAlignedCollectionView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA7802F04522083DF0ECA45 /* Pods-LeftAlignedCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeftAlignedCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeftAlignedCollectionView/Pods-LeftAlignedCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		4B75E28175CA473D9B875D19 /* Pods-LeftAlignedCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeftAlignedCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeftAlignedCollectionView/Pods-LeftAlignedCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		919187441ECF04CC00FDC115 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
 		919187451ECF04CC00FDC115 /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
 		919646431CE4B8EC00E770C8 /* LeftAlignedCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftAlignedCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,29 +65,6 @@
 		DC66A3441ECC9046009669DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DC66A3451ECC9046009669DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DC66A3461ECC9046009669DB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		DC66A34A1ECC96CB009669DB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		DC66A34B1ECC96CB009669DB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		DC66A34C1ECC96CB009669DB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		DC66A34D1ECC96CB009669DB /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		DC66A34E1ECC96CB009669DB /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		DC66A34F1ECC96CB009669DB /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		DC66A3501ECC96CB009669DB /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		DC66A3511ECC96CB009669DB /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		DC66A3521ECC96CB009669DB /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		DC66A3531ECC96CB009669DB /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		DC66A3541ECC96CB009669DB /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		DC66A3551ECC96CB009669DB /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		DC66A3561ECC96CB009669DB /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		DC66A3571ECC96CB009669DB /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		DC66A3581ECC96CB009669DB /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		DC66A3591ECC96CB009669DB /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		DC66A35A1ECC96CB009669DB /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		DC66A35B1ECC96CB009669DB /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		DC66A35C1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		DC66A35D1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		DC66A35E1ECC96CB009669DB /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		DC66A35F1ECC96CB009669DB /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		DC66A3601ECC96CB009669DB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		DCF22A401ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAlignedFlowLayoutVC.h; sourceTree = "<group>"; };
 		DCF22A411ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayoutVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5FC14E93201FFC6B91D0B3 /* libPods-LeftAlignedCollectionView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7143AAA14C0645EFD7F1B9F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EA7802F04522083DF0ECA45 /* Pods-LeftAlignedCollectionView.debug.xcconfig */,
+				4B75E28175CA473D9B875D19 /* Pods-LeftAlignedCollectionView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		919187431ECF04B900FDC115 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +112,8 @@
 				919646451CE4B8EC00E770C8 /* LeftAlignedCollectionView */,
 				9196465F1CE4B8EC00E770C8 /* LeftAlignedCollectionViewTests */,
 				919646441CE4B8EC00E770C8 /* Products */,
+				7143AAA14C0645EFD7F1B9F6 /* Pods */,
+				F92953D51B0C1AABC61E924E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,7 +178,6 @@
 		9196466F1CE4BA0D00E770C8 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				DC66A3491ECC96CB009669DB /* Masonry */,
 				919646941CE4BB3D00E770C8 /* NSString+YYAdditions.h */,
 				919646951CE4BB3D00E770C8 /* NSString+YYAdditions.m */,
 			);
@@ -223,34 +206,12 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		DC66A3491ECC96CB009669DB /* Masonry */ = {
+		F92953D51B0C1AABC61E924E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC66A34A1ECC96CB009669DB /* MASCompositeConstraint.h */,
-				DC66A34B1ECC96CB009669DB /* MASCompositeConstraint.m */,
-				DC66A34C1ECC96CB009669DB /* MASConstraint+Private.h */,
-				DC66A34D1ECC96CB009669DB /* MASConstraint.h */,
-				DC66A34E1ECC96CB009669DB /* MASConstraint.m */,
-				DC66A34F1ECC96CB009669DB /* MASConstraintMaker.h */,
-				DC66A3501ECC96CB009669DB /* MASConstraintMaker.m */,
-				DC66A3511ECC96CB009669DB /* MASLayoutConstraint.h */,
-				DC66A3521ECC96CB009669DB /* MASLayoutConstraint.m */,
-				DC66A3531ECC96CB009669DB /* Masonry.h */,
-				DC66A3541ECC96CB009669DB /* MASUtilities.h */,
-				DC66A3551ECC96CB009669DB /* MASViewAttribute.h */,
-				DC66A3561ECC96CB009669DB /* MASViewAttribute.m */,
-				DC66A3571ECC96CB009669DB /* MASViewConstraint.h */,
-				DC66A3581ECC96CB009669DB /* MASViewConstraint.m */,
-				DC66A3591ECC96CB009669DB /* NSArray+MASAdditions.h */,
-				DC66A35A1ECC96CB009669DB /* NSArray+MASAdditions.m */,
-				DC66A35B1ECC96CB009669DB /* NSArray+MASShorthandAdditions.h */,
-				DC66A35C1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.h */,
-				DC66A35D1ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m */,
-				DC66A35E1ECC96CB009669DB /* View+MASAdditions.h */,
-				DC66A35F1ECC96CB009669DB /* View+MASAdditions.m */,
-				DC66A3601ECC96CB009669DB /* View+MASShorthandAdditions.h */,
+				0451120660EB054CE8EB32B9 /* libPods-LeftAlignedCollectionView.a */,
 			);
-			path = Masonry;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 919646651CE4B8EC00E770C8 /* Build configuration list for PBXNativeTarget "LeftAlignedCollectionView" */;
 			buildPhases = (
+				323BEB48D8F42C98594C6333 /* [CP] Check Pods Manifest.lock */,
 				9196463F1CE4B8EC00E770C8 /* Sources */,
 				919646401CE4B8EC00E770C8 /* Frameworks */,
 				919646411CE4B8EC00E770C8 /* Resources */,
+				4A8DBF88D34F68066623DD28 /* [CP] Embed Pods Frameworks */,
+				9761074A9A02000595A0C1FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,27 +315,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		323BEB48D8F42C98594C6333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8DBF88D34F68066623DD28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeftAlignedCollectionView/Pods-LeftAlignedCollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9761074A9A02000595A0C1FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeftAlignedCollectionView/Pods-LeftAlignedCollectionView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9196463F1CE4B8EC00E770C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DCF22A421ECDF3EC00AB362E /* RightAlignedFlowLayoutVC.m in Sources */,
-				DC66A3621ECC96CB009669DB /* MASConstraint.m in Sources */,
-				DC66A3651ECC96CB009669DB /* MASViewAttribute.m in Sources */,
 				91BAE5DB1ECD774E0004CB4E /* LeftAlignedFlowLayoutVC.m in Sources */,
-				DC66A3671ECC96CB009669DB /* NSArray+MASAdditions.m in Sources */,
-				DC66A3661ECC96CB009669DB /* MASViewConstraint.m in Sources */,
-				DC66A3641ECC96CB009669DB /* MASLayoutConstraint.m in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
 				919187461ECF04CC00FDC115 /* Attribute.m in Sources */,
 				919646481CE4B8EC00E770C8 /* main.m in Sources */,
-				DC66A3691ECC96CB009669DB /* View+MASAdditions.m in Sources */,
-				DC66A3611ECC96CB009669DB /* MASCompositeConstraint.m in Sources */,
 				DC007AE41ED03943003EFDA5 /* LayoutAttributeTools.m in Sources */,
-				DC66A3681ECC96CB009669DB /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				91BAE5D81ECD76310004CB4E /* RightAlignedFlowLayout.m in Sources */,
-				DC66A3631ECC96CB009669DB /* MASConstraintMaker.m in Sources */,
 				9196466E1CE4B92100E770C8 /* LeftAlignedFlowLayout.m in Sources */,
 				DC66A3471ECC9046009669DB /* MainViewController.m in Sources */,
 				919646961CE4BB3D00E770C8 /* NSString+YYAdditions.m in Sources */,
@@ -492,6 +495,7 @@
 		};
 		919646661CE4B8EC00E770C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA7802F04522083DF0ECA45 /* Pods-LeftAlignedCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SVKNFBR4AF;
@@ -506,6 +510,7 @@
 		};
 		919646671CE4B8EC00E770C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B75E28175CA473D9B875D19 /* Pods-LeftAlignedCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SVKNFBR4AF;

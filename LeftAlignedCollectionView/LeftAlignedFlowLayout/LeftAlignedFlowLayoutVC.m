@@ -43,6 +43,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // Register cell classes
+    self.collectionView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"timg3.jpeg"].CGImage);
     self.title = @"左对齐流水布局";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     

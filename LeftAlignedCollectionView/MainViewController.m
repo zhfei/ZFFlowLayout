@@ -22,6 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"流水布局";
+    
+    self.view.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"timg3.jpeg"].CGImage);
 }
 
 - (void)didReceiveMemoryWarning {

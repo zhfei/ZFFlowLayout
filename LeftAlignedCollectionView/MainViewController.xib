@@ -20,11 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcU-9A-n8s">
-                    <rect key="frame" x="81" y="137" width="158" height="30"/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="81" y="137" width="158" height="44"/>
+                    <color key="backgroundColor" red="0.6453070466259434" green="0.59606577861498766" blue="0.99835759401321411" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="158" id="0Dx-2i-MwF"/>
-                        <constraint firstAttribute="height" constant="30" id="oMs-b3-F9e"/>
+                        <constraint firstAttribute="height" constant="44" id="oMs-b3-F9e"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="左对齐流水布局">
@@ -35,10 +35,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoD-Jg-NQC">
-                    <rect key="frame" x="81" y="225" width="158" height="30"/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="81" y="239" width="158" height="44"/>
+                    <color key="backgroundColor" red="0.55533053642329244" green="0.69168736770978756" blue="0.99835759401321411" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Z2Q-5E-eBU"/>
+                        <constraint firstAttribute="height" constant="44" id="Z2Q-5E-eBU"/>
                         <constraint firstAttribute="width" constant="158" id="uIA-wf-DvN"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
