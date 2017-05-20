@@ -7,6 +7,9 @@
 //
 
 #import "LeftAlignedFlowLayout.h"
+#import "Attribute.h"
+#import "LayoutAttributeTools.h"
+
 
 @interface LeftAlignedFlowLayout()
 @property (assign,nonatomic)CGFloat leftMargin;//一行   距离左侧的距离
@@ -30,35 +33,61 @@
 {
     NSMutableArray* attributes = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
     
-    for (int i=0; i<[attributes count]; i++) {
-        UICollectionViewLayoutAttributes *attr = [attributes objectAtIndex:i];
-        //当类型为UICollectionElementKindCell时，修改布局
-        if (attr.representedElementKind==nil) {
-            
-            //分组展示时，每组的开始row都等于0
-            if (attr.indexPath.row==0) {
-                attr.frame=CGRectMake(self.leftMargin, attr.frame.origin.y, attr.frame.size.width, attr.frame.size.height);
-            }else{
-                if (i>0) {
-                    
-                    UICollectionViewLayoutAttributes *subAttr = [attributes objectAtIndex:i-1];
-                    
-                    if (CGRectGetMaxX(subAttr.frame)+self.itemMargin+attr.bounds.size.width+self.leftMargin>rect.size.width) {
-                        attr.frame=CGRectMake(self.leftMargin, attr.frame.origin.y, attr.frame.size.width, attr.frame.size.height);
-                    }else{
-                        attr.frame=CGRectMake(CGRectGetMaxX(subAttr.frame)+self.itemMargin, attr.frame.origin.y, attr.frame.size.width, attr.frame.size.height);
-                    }
-                }else{
-                    attr.frame=CGRectMake(self.leftMargin, attr.frame.origin.y, attr.frame.size.width, attr.frame.size.height);
-                    
-                }
-                
-                
-            }
-        }
-        
-    }
-    
+    NSMutableArray * subArray = [LayoutAttributeTools groupTheSameLineItems:attributes];
+
+    [self leftAlign_updateItemAttributeInSigleLine:subArray];
+ 
     return attributes;
 }
+
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 更新每个元素的位置
+ *  @param groupArray 归并后的结果数组
+ */
+- (void)leftAlign_updateItemAttributeInSigleLine:(NSMutableArray * )groupArray{
+    
+    NSMutableArray * modelArray = [NSMutableArray array];
+    
+    for (NSArray * array  in groupArray) {
+        
+        NSInteger count = array.count;
+        
+        if (!count) {
+            continue;
+        }
+        
+        for (int i = 0; i<count; i++) {
+            UICollectionViewLayoutAttributes *attrOne = array[i];
+            [modelArray addObject:[Attribute AttributeWithIndex:i width:attrOne.size.width]];
+            
+        }
+        
+        CGFloat leftWith = 0;
+        
+        for (int i=0; i<count; i++) {
+            
+            UICollectionViewLayoutAttributes *attr = [array objectAtIndex:i];
+            
+            NSPredicate *predice =[NSPredicate predicateWithFormat:@"index < %d",i];
+            NSArray * resultArray = [modelArray filteredArrayUsingPredicate:predice];
+            NSNumber * number = [resultArray valueForKeyPath:@"@sum.width"];
+            
+            leftWith = self.leftMargin+self.itemMargin*(count-1)+number.doubleValue;
+            CGRect frame = attr.frame;
+            frame.origin.x = leftWith;
+            attr.frame = frame;
+            
+        }
+        [modelArray removeAllObjects];
+    }
+    
+}
+
+
+
+
+
+
 @end
