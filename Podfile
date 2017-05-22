@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target "LeftAlignedCollectionView" do
+target "ZFFlowLayout" do
        pod 'Masonry'
 end
 
