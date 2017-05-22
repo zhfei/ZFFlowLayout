@@ -21,6 +21,9 @@
 		DC2606951ED0A1A100451E75 /* ZFFlowLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2606941ED0A1A100451E75 /* ZFFlowLayoutVC.m */; };
 		DC66A3471ECC9046009669DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC66A3451ECC9046009669DB /* MainViewController.m */; };
 		DC66A3481ECC9046009669DB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC66A3461ECC9046009669DB /* MainViewController.xib */; };
+		DCDB684A1ED337EB00F479CD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDB68471ED337EB00F479CD /* home.png */; };
+		DCDB684B1ED337EB00F479CD /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDB68481ED337EB00F479CD /* left.png */; };
+		DCDB684C1ED337EB00F479CD /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDB68491ED337EB00F479CD /* right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		DC66A3441ECC9046009669DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DC66A3451ECC9046009669DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DC66A3461ECC9046009669DB /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DCDB68471ED337EB00F479CD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		DCDB68481ED337EB00F479CD /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		DCDB68491ED337EB00F479CD /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 			children = (
 				9119B50C1ED3127500604082 /* ZFFlowLayout.h */,
 				9119B50D1ED3127500604082 /* ZFFlowLayout.m */,
+				DCDB68461ED3378500F479CD /* EffectPicture */,
+				9119B5011ED3121300604082 /* Model */,
 				9119B4F71ED3121300604082 /* Common */,
 				9119B4FE1ED3121300604082 /* LeftAlignedFlowLayout */,
-				9119B5011ED3121300604082 /* Model */,
 				9119B5041ED3121300604082 /* RightAlignedFlowLayout */,
 			);
 			path = Src;
@@ -201,6 +208,16 @@
 			path = ZFFlowLayoutTests;
 			sourceTree = "<group>";
 		};
+		DCDB68461ED3378500F479CD /* EffectPicture */ = {
+			isa = PBXGroup;
+			children = (
+				DCDB68471ED337EB00F479CD /* home.png */,
+				DCDB68481ED337EB00F479CD /* left.png */,
+				DCDB68491ED337EB00F479CD /* right.png */,
+			);
+			path = EffectPicture;
+			sourceTree = "<group>";
+		};
 		F92953D51B0C1AABC61E924E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDB684C1ED337EB00F479CD /* right.png in Resources */,
+				DCDB684A1ED337EB00F479CD /* home.png in Resources */,
+				DCDB684B1ED337EB00F479CD /* left.png in Resources */,
 				919646561CE4B8EC00E770C8 /* LaunchScreen.storyboard in Resources */,
 				DC66A3481ECC9046009669DB /* MainViewController.xib in Resources */,
 				919646531CE4B8EC00E770C8 /* Assets.xcassets in Resources */,
@@ -323,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4A8DBF88D34F68066623DD28 /* [CP] Embed Pods Frameworks */ = {
