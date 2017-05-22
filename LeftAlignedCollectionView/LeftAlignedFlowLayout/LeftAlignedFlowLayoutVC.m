@@ -1,26 +1,38 @@
 //
-//  FlowLayoutVC.m
+//  LeftAlignedFlowLayoutVC.m
 //  LeftAlignedCollectionView
 //
 //  Created by zhoufei on 16/5/12.
 //  Copyright © 2016年 zhoufei. All rights reserved.
 //
 
-#import "FlowLayoutVC.h"
+#import "LeftAlignedFlowLayoutVC.h"
 #import "LeftAlignedFlowLayout.h"
 #import "Masonry.h"
+#import "NSString+YYAdditions.h"
+
+static CGFloat  ItemMarginWithLeftEdge=10; //cell距离左边界距离
+static CGFloat  ItemMarginWithRightEdge=10;//cell距离右边界距离
+static CGFloat  itemMarginWithitem=20;     //cell距离相邻cell距离
 
 static NSString * const reuseIdentifier = @"Cell";
 
-@interface FlowLayoutVC ()
+@interface LeftAlignedFlowLayoutVC ()
 @property (nonatomic,strong)NSMutableArray *dataSource;
 @end
 
-@implementation FlowLayoutVC
+@implementation LeftAlignedFlowLayoutVC
 
-- (instancetype)initWithFlowLayout:(UICollectionViewFlowLayout*)flowLayout {
+
+- (instancetype)initWithLeftAlignedFlowLayout
+{
+    //左对齐流水布局设置
+    LeftAlignedFlowLayout * flow =[LeftAlignedFlowLayout new];
+    [flow configFlowLayoutWithFlowLayoutItemEdgeInsets:(FlowLayoutItemEdgeInsets){20,ItemMarginWithLeftEdge,20,itemMarginWithitem}
+                                     sectionEdgeInsets:(FlowLayoutSectionEdgeInsets){20,ItemMarginWithLeftEdge,20,ItemMarginWithRightEdge}];
     
-    self = [[[self class]alloc]initWithCollectionViewLayout:flowLayout];
+    
+    self = [[[self class]alloc]initWithCollectionViewLayout:flow];
     if (self) {
         self.collectionView.backgroundColor=[UIColor whiteColor];
     }
@@ -107,19 +119,9 @@ static NSString * const reuseIdentifier = @"Cell";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    CGFloat width= [self calculateSizeWithHeight:44 Font:16 string:self.dataSource[indexPath.row]].width;
+    CGFloat width= [self.dataSource[indexPath.row] calculateWidthWithHeihgt:44 Font:16];
     
     return CGSizeMake(width+40, 44);
-}
-
-
-- (CGSize)calculateSizeWithHeight:(CGFloat)height Font:(CGFloat)font string:(NSString *)string;
-{
-    CGSize size = CGSizeMake(0, height);
-    CGSize tempSize;
-    NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:font]};
-    tempSize = [string boundingRectWithSize:size options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
-    return tempSize;
 }
 
 

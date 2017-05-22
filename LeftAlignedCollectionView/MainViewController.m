@@ -7,8 +7,8 @@
 //
 
 #import "MainViewController.h"
-#import "FlowLayoutVC.h"
-#import "FlowLayout.h"
+#import "LeftAlignedFlowLayoutVC.h"
+#import "RightAlignedFlowLayoutVC.h"
 
 @interface MainViewController ()
 - (IBAction)leftAlignBtnAction:(id)sender;
@@ -43,16 +43,12 @@
 
 - (IBAction)leftAlignBtnAction:(id)sender {
     
-    UICollectionViewFlowLayout * flowLayout = [FlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_leftAlign];
-    
-    FlowLayoutVC * vc = [[FlowLayoutVC alloc] initWithFlowLayout:flowLayout];
+    LeftAlignedFlowLayoutVC * vc = [[LeftAlignedFlowLayoutVC alloc] initWithLeftAlignedFlowLayout];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)RightAlignBtnAction:(id)sender {
-        UICollectionViewFlowLayout * flowLayout = [FlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_rightAlign];
-    
-    FlowLayoutVC * vc = [[FlowLayoutVC alloc] initWithFlowLayout:flowLayout];
-    [self.navigationController pushViewController:vc animated:YES];
+    RightAlignedFlowLayoutVC * rightVC = [[RightAlignedFlowLayoutVC alloc] initWithRightAlignedFlowLayout];
+    [self.navigationController pushViewController:rightVC animated:YES];
 }
 @end
