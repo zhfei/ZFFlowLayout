@@ -1,13 +1,19 @@
-# ZFFlowLayout 流水布局
+#### ZFFlowLayout 流水布局
 <br>
-通过继承UICollectionViewFlowLayout类，并重写方法：- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
-{}方法,然后改变UICollectionViewFlowLayout类的布局方案。最后实现效果如下：
+流水布局的思路是：
+通过UICollectionViewFlowLayout的代理方法 ：-(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect 拿到UICollectionView元素的原始布局实例，然后按照想实现的效果修改原始的布局实例属性值。
+
+<br><br>
+首页如图所示
+![首页](https://github.com/zhfei/ZFFlowLayout/blob/master/ZFFlowLayout/Src/EffectPicture/home.png)
 <br><br>
 
-![截图](https://github.com/zhfei/MyTestWorkProduct/blob/master/MyTestWorkProduct/Assets.xcassets/LeftAligen.imageset/LeftAligen.png)
+左对齐流水布局如图所示
+<br><br>
+![左对齐流水布局](https://github.com/zhfei/ZFFlowLayout/blob/master/ZFFlowLayout/Src/EffectPicture/left.png)
 <br><br>
 
-主要逻辑代码如下：
+右对齐流水布局如图所示
 <br><br>
-![截图](https://github.com/zhfei/MyTestWorkProduct/blob/master/MyTestWorkProduct/Assets.xcassets/LeftAligenCode.imageset/LeftAligenCode.png)
+![右对齐流水布局](https://github.com/zhfei/ZFFlowLayout/blob/master/ZFFlowLayout/Src/EffectPicture/right.png)
 
