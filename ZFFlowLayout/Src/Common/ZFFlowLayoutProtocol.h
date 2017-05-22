@@ -1,5 +1,5 @@
 //
-//  FlowLayoutProtocol.h
+//  ZFFlowLayoutProtocol.h
 //  LeftAlignedCollectionView
 //
 //  Created by xuyefeng on 17/5/17.
@@ -9,9 +9,9 @@
 //  流水布局协议
 
 #import <Foundation/Foundation.h>
-#import "FlowLayoutMacro.h"
+#import "ZFFlowLayoutMacro.h"
 
-@protocol FlowLayoutProtocol <NSObject>
+@protocol ZFFlowLayoutProtocol <NSObject>
 
 /**
  配置布局

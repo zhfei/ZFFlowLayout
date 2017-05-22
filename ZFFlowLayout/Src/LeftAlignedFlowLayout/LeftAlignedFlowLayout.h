@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FlowLayoutProtocol.h"
+#import "ZFFlowLayoutProtocol.h"
 
 
-@interface LeftAlignedFlowLayout : UICollectionViewFlowLayout <FlowLayoutProtocol>
+@interface LeftAlignedFlowLayout : UICollectionViewFlowLayout <ZFFlowLayoutProtocol>
 
 @end

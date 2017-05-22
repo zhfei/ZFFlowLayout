@@ -1,5 +1,5 @@
 //
-//  FlowLayoutVC.h
+//  ZFFlowLayoutVC.h
 //  LeftAlignedCollectionView
 //
 //  Created by zhoufei on 16/5/12.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlowLayoutVC : UICollectionViewController
+@interface ZFFlowLayoutVC : UICollectionViewController
 /*!
  *  @author zhoufei
  *

@@ -1,22 +1,22 @@
 //
-//  FlowLayoutVC.m
+//  ZFFlowLayoutVC.m
 //  LeftAlignedCollectionView
 //
 //  Created by zhoufei on 16/5/12.
 //  Copyright © 2016年 zhoufei. All rights reserved.
 //
 
-#import "FlowLayoutVC.h"
+#import "ZFFlowLayoutVC.h"
 #import "LeftAlignedFlowLayout.h"
 #import "Masonry.h"
 
 static NSString * const reuseIdentifier = @"Cell";
 
-@interface FlowLayoutVC ()
+@interface ZFFlowLayoutVC ()
 @property (nonatomic,strong)NSMutableArray *dataSource;
 @end
 
-@implementation FlowLayoutVC
+@implementation ZFFlowLayoutVC
 
 - (instancetype)initWithFlowLayout:(UICollectionViewFlowLayout*)flowLayout {
     

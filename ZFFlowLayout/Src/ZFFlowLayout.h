@@ -1,5 +1,5 @@
 //
-//  FlowLayout.h
+//  ZFFlowLayout.h
 //  LeftAlignedCollectionView
 //
 //  Created by xuyefeng on 17/5/20.
@@ -7,15 +7,23 @@
 //
 
 #import <UIKit/UICollectionViewFlowLayout.h>
+#import "ZFFlowLayoutMacro.h"
 
-
+//流水布局类型
 typedef enum : NSUInteger {
     FlowLayoutType_leftAlign,
     FlowLayoutType_rightAlign,
 } FlowLayoutType;
 
-@interface FlowLayout : NSObject
+@interface ZFFlowLayout : NSObject
 
+/*!
+ *  @author zhoufei
+ *
+ *  @brief 根据传入不同的流失布局类型获取不同的布局实例
+ *  @param flowLayoutType 流水布局类型
+ *  @return 布局实例
+ */
 + (UICollectionViewFlowLayout *)flowLayoutWithFlowLayoutType:(FlowLayoutType)flowLayoutType;
 
 @end
