@@ -13,7 +13,6 @@
 + (instancetype)AttributeWithIndex:(int)index width:(float)width {
 
     Attribute * attribute = [Attribute new];
-    
     attribute.index = index;
     attribute.width = width;
     
