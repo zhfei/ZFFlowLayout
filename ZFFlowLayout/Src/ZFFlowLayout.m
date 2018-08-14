@@ -10,6 +10,7 @@
 #import "ZFFlowLayout.h"
 #import "LeftAlignedFlowLayout.h"
 #import "RightAlignedFlowLayout.h"
+#import "ZFFlowLayout-Swift.h"
 
 @implementation ZFFlowLayout
 
@@ -53,6 +54,9 @@
     } else if (flowLayoutType == FlowLayoutType_rightAlign) {
         
         flowLayout =  [RightAlignedFlowLayout new];
+    } else if (flowLayoutType == FlowLayoutType_axis) {
+        
+        flowLayout =  [ZFAxisFlowLayout new];
     }
 
     [flowLayout configFlowLayoutWithFlowLayoutItemEdgeInsets:itemEdgeInsets
