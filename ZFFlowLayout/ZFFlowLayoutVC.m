@@ -35,7 +35,6 @@ static NSString * const reuseIdentifier = @"Cell";
     self.title = @"左对齐流水布局";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    
     NSString *string =@"西湖，";
     
     self.dataSource=[NSMutableArray array];
