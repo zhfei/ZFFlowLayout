@@ -9,10 +9,12 @@
 #import "MainViewController.h"
 #import "ZFFlowLayoutVC.h"
 #import "ZFFlowLayout.h"
+#import "ZFFlowLayout-Swift.h"
 
 @interface MainViewController ()
 - (IBAction)leftAlignBtnAction:(id)sender;
 - (IBAction)RightAlignBtnAction:(id)sender;
+- (IBAction)AxisBtnAction:(UIButton *)sender;
 
 @end
 
@@ -35,9 +37,17 @@
 }
 
 - (IBAction)RightAlignBtnAction:(id)sender {
-        UICollectionViewFlowLayout * flowLayout = [ZFFlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_rightAlign];
+    UICollectionViewFlowLayout * flowLayout = [ZFFlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_rightAlign];
     
     ZFFlowLayoutVC * vc = [[ZFFlowLayoutVC alloc] initWithFlowLayout:flowLayout];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)AxisBtnAction:(UIButton *)sender {
+    UICollectionViewFlowLayout * flowLayout = [ZFFlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_axis];
+    
+    ZFFlowLayoutVC * vc = [[ZFFlowLayoutVC alloc] initWithFlowLayout:flowLayout];
+    vc.collectionView.showsHorizontalScrollIndicator = NO;
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

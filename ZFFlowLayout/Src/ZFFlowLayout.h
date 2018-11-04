@@ -14,6 +14,8 @@
 typedef enum : NSUInteger {
     FlowLayoutType_leftAlign,
     FlowLayoutType_rightAlign,
+    FlowLayoutType_axis,//轴线
+    
 } FlowLayoutType;
 
 @interface ZFFlowLayout : NSObject

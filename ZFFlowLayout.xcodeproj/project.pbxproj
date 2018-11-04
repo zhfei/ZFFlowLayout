@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D5FC14E93201FFC6B91D0B3 /* libPods-ZFFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0451120660EB054CE8EB32B9 /* libPods-ZFFlowLayout.a */; };
+		910801102122BACE00698A5D /* ZFAxisFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9108010F2122BACE00698A5D /* ZFAxisFlowLayout.swift */; };
 		9119B5071ED3121300604082 /* LayoutAttributeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B4F91ED3121300604082 /* LayoutAttributeTools.m */; };
 		9119B5091ED3121300604082 /* LeftAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B5001ED3121300604082 /* LeftAlignedFlowLayout.m */; };
 		9119B50A1ED3121300604082 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B5031ED3121300604082 /* Attribute.m */; };
@@ -40,6 +41,8 @@
 		0451120660EB054CE8EB32B9 /* libPods-ZFFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZFFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA7802F04522083DF0ECA45 /* Pods-ZFFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFFlowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFFlowLayout/Pods-ZFFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		4B75E28175CA473D9B875D19 /* Pods-ZFFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFFlowLayout/Pods-ZFFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
+		9108010E2122BACD00698A5D /* ZFFlowLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZFFlowLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		9108010F2122BACE00698A5D /* ZFAxisFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFAxisFlowLayout.swift; sourceTree = "<group>"; };
 		9119B4F81ED3121300604082 /* LayoutAttributeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAttributeTools.h; sourceTree = "<group>"; };
 		9119B4F91ED3121300604082 /* LayoutAttributeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAttributeTools.m; sourceTree = "<group>"; };
 		9119B4FC1ED3121300604082 /* ZFFlowLayoutMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFFlowLayoutMacro.h; sourceTree = "<group>"; };
@@ -100,6 +103,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9108010D2122BA7400698A5D /* AxisFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9108010F2122BACE00698A5D /* ZFAxisFlowLayout.swift */,
+			);
+			path = AxisFlowLayout;
+			sourceTree = "<group>";
+		};
 		9119B4F61ED3121300604082 /* Src */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,7 @@
 				9119B4F71ED3121300604082 /* Common */,
 				9119B4FE1ED3121300604082 /* LeftAlignedFlowLayout */,
 				9119B5041ED3121300604082 /* RightAlignedFlowLayout */,
+				9108010D2122BA7400698A5D /* AxisFlowLayout */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -180,6 +192,7 @@
 				9196464A1CE4B8EC00E770C8 /* AppDelegate.m */,
 				DC2606931ED0A1A100451E75 /* ZFFlowLayoutVC.h */,
 				DC2606941ED0A1A100451E75 /* ZFFlowLayoutVC.m */,
+				9108010E2122BACD00698A5D /* ZFFlowLayout-Bridging-Header.h */,
 				DC66A3441ECC9046009669DB /* MainViewController.h */,
 				DC66A3451ECC9046009669DB /* MainViewController.m */,
 				DC66A3461ECC9046009669DB /* MainViewController.xib */,
@@ -237,8 +250,6 @@
 				9196463F1CE4B8EC00E770C8 /* Sources */,
 				919646401CE4B8EC00E770C8 /* Frameworks */,
 				919646411CE4B8EC00E770C8 /* Resources */,
-				4A8DBF88D34F68066623DD28 /* [CP] Embed Pods Frameworks */,
-				9761074A9A02000595A0C1FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +290,7 @@
 					919646421CE4B8EC00E770C8 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = SVKNFBR4AF;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Manual;
 					};
 					9196465B1CE4B8EC00E770C8 = {
@@ -337,43 +349,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFFlowLayout-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4A8DBF88D34F68066623DD28 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFFlowLayout/Pods-ZFFlowLayout-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9761074A9A02000595A0C1FF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFFlowLayout/Pods-ZFFlowLayout-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -383,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910801102122BACE00698A5D /* ZFAxisFlowLayout.swift in Sources */,
 				9119B5071ED3121300604082 /* LayoutAttributeTools.m in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
 				9119B50A1ED3121300604082 /* Attribute.m in Sources */,
@@ -512,6 +498,7 @@
 			baseConfigurationReference = 2EA7802F04522083DF0ECA45 /* Pods-ZFFlowLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SVKNFBR4AF;
 				INFOPLIST_FILE = ZFFlowLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -519,6 +506,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d8066971-f948-4c1c-afe2-9dc29c2d3c53";
 				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZFFlowLayout/ZFFlowLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -527,6 +517,7 @@
 			baseConfigurationReference = 4B75E28175CA473D9B875D19 /* Pods-ZFFlowLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SVKNFBR4AF;
 				INFOPLIST_FILE = ZFFlowLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,12 +525,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d8066971-f948-4c1c-afe2-9dc29c2d3c53";
 				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZFFlowLayout/ZFFlowLayout-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		919646691CE4B8EC00E770C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZFFlowLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -552,6 +546,7 @@
 		9196466A1CE4B8EC00E770C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ZFFlowLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
