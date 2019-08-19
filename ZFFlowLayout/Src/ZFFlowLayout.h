@@ -19,7 +19,6 @@ typedef enum : NSUInteger {
 } FlowLayoutType;
 
 @interface ZFFlowLayout : NSObject
-
 /*!
  *  @author zhoufei
  *
@@ -28,7 +27,6 @@ typedef enum : NSUInteger {
  *  @return 布局实例
  */
 + (UICollectionViewFlowLayout *)flowLayoutWithFlowLayoutType:(FlowLayoutType)flowLayoutType;
-
 
 /*!
  *  @author zhoufei

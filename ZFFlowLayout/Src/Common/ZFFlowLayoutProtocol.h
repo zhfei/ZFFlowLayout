@@ -12,7 +12,6 @@
 #import "ZFFlowLayoutMacro.h"
 
 @protocol ZFFlowLayoutProtocol <NSObject>
-
 /**
  配置布局
 
@@ -21,6 +20,4 @@
  */
 - (void)configFlowLayoutWithFlowLayoutItemEdgeInsets:(FlowLayoutItemEdgeInsets)itemEdgeInsets
                                    sectionEdgeInsets:(FlowLayoutSectionEdgeInsets)sectionEdgeInsets;
-
-
 @end

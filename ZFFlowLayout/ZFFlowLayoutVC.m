@@ -17,9 +17,7 @@ static NSString * const reuseIdentifier = @"Cell";
 @end
 
 @implementation ZFFlowLayoutVC
-
 - (instancetype)initWithFlowLayout:(UICollectionViewFlowLayout*)flowLayout {
-    
     self = [[[self class]alloc]initWithCollectionViewLayout:flowLayout];
     if (self) {
         self.collectionView.backgroundColor=[UIColor whiteColor];
@@ -36,7 +34,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     NSString *string =@"西湖，";
-    
     self.dataSource=[NSMutableArray array];
     for (int i=0; i<60; i++) {
         int count =arc4random_uniform(5);
@@ -45,16 +42,12 @@ static NSString * const reuseIdentifier = @"Cell";
             [stringM appendString:string];
         }
         [stringM appendString:[NSString stringWithFormat:@"%d",i]];
-        
         [self.dataSource addObject:stringM];
     }
     
 }
 /*!
- *  @author zhoufei
- *
  *  @brief 将view四个直角剪切成圆角
- *
  *  @param view 要剪切的view
  */
 - (void)clipRoundCorners:(UIView *)view
@@ -64,11 +57,9 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark <UICollectionViewDataSource>
-
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSource.count;
@@ -78,12 +69,10 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     if ([cell.contentView.subviews count]) {
-        
         UILabel *label =cell.contentView.subviews.lastObject;
         label.text=self.dataSource[indexPath.row];
         
     }else{
-        
         [cell.contentView setBackgroundColor:[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]];
         UILabel *label =[[UILabel alloc]init];
         [cell.contentView addSubview:label];
@@ -97,30 +86,22 @@ static NSString * const reuseIdentifier = @"Cell";
         [self clipRoundCorners:cell.contentView];
     }
     
-    // Configure the cell
-    
     return cell;
 }
 
 #pragma mark <UICollectionViewDelegate>
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width= [self calculateSizeWithHeight:44 Font:16 string:self.dataSource[indexPath.row]].width;
     
     return CGSizeMake(width+40, 44);
 }
 
-
-- (CGSize)calculateSizeWithHeight:(CGFloat)height Font:(CGFloat)font string:(NSString *)string;
-{
+- (CGSize)calculateSizeWithHeight:(CGFloat)height Font:(CGFloat)font string:(NSString *)string {
     CGSize size = CGSizeMake(0, height);
     CGSize tempSize;
     NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:font]};
     tempSize = [string boundingRectWithSize:size options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
     return tempSize;
 }
-
 
 @end

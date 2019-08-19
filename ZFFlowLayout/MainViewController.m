@@ -29,7 +29,6 @@
 }
 
 - (IBAction)leftAlignBtnAction:(id)sender {
-    
     UICollectionViewFlowLayout * flowLayout = [ZFFlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_leftAlign];
     
     ZFFlowLayoutVC * vc = [[ZFFlowLayoutVC alloc] initWithFlowLayout:flowLayout];

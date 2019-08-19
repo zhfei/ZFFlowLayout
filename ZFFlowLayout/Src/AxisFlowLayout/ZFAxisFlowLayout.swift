@@ -15,7 +15,6 @@ class ZFAxisFlowLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return super.layoutAttributesForElements(in: rect)
     }
-
 }
 
 extension ZFAxisFlowLayout: ZFFlowLayoutProtocol {
