@@ -44,9 +44,27 @@
 
 - (IBAction)AxisBtnAction:(UIButton *)sender {
     UICollectionViewFlowLayout * flowLayout = [ZFFlowLayout flowLayoutWithFlowLayoutType:FlowLayoutType_axis];
-    
     ZFFlowLayoutVC * vc = [[ZFFlowLayoutVC alloc] initWithFlowLayout:flowLayout];
     vc.collectionView.showsHorizontalScrollIndicator = NO;
     [self.navigationController pushViewController:vc animated:YES];
+    
 }
+
+- (IBAction)WaterFallBtnAction:(UIButton *)sender {
+    ZFWaterFallLayout * waterFallLayout = [[ZFWaterFallLayout alloc] init];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.itemSize = CGSizeMake(80, 100);
+    flowLayout.minimumLineSpacing = 10;
+    flowLayout.minimumInteritemSpacing = 20;
+    flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    
+    ZFWaterFallCollectionViewController * vc = [[ZFWaterFallCollectionViewController alloc] initWithCollectionViewLayout:waterFallLayout];
+    vc.collectionView.showsHorizontalScrollIndicator = NO;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    
+}
+
 @end

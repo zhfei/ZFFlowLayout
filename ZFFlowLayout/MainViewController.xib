@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -64,6 +62,21 @@
                         <action selector="AxisBtnAction:" destination="-1" eventType="touchUpInside" id="Bye-yZ-LHn"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9F-aM-25Y">
+                    <rect key="frame" x="81" y="383" width="158" height="44"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="UmL-tY-0R9"/>
+                        <constraint firstAttribute="width" constant="158" id="bkE-p3-SPK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="瀑布流">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="WaterFallBtnAction:" destination="-1" eventType="touchUpInside" id="CIQ-Nw-FDE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -72,6 +85,8 @@
                 <constraint firstItem="VoD-Jg-NQC" firstAttribute="leading" secondItem="BcU-9A-n8s" secondAttribute="leading" id="MUt-x1-rtv"/>
                 <constraint firstItem="RI1-I2-Qq2" firstAttribute="top" secondItem="VoD-Jg-NQC" secondAttribute="bottom" constant="41" id="Pqt-wo-enc"/>
                 <constraint firstItem="BcU-9A-n8s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="Tpf-zF-2mc"/>
+                <constraint firstItem="M9F-aM-25Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fBQ-LK-KoI"/>
+                <constraint firstItem="M9F-aM-25Y" firstAttribute="top" secondItem="RI1-I2-Qq2" secondAttribute="bottom" constant="40" id="hSQ-ec-YhO"/>
                 <constraint firstItem="RI1-I2-Qq2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kpd-Hf-Tr9"/>
             </constraints>
             <point key="canvasLocation" x="-91" y="-36"/>

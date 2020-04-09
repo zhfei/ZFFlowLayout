@@ -14,6 +14,8 @@
 		9119B50A1ED3121300604082 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B5031ED3121300604082 /* Attribute.m */; };
 		9119B50B1ED3121300604082 /* RightAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B5061ED3121300604082 /* RightAlignedFlowLayout.m */; };
 		9119B50E1ED3127500604082 /* ZFFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9119B50D1ED3127500604082 /* ZFFlowLayout.m */; };
+		915F171C243C85FD009FA942 /* ZFWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F171B243C85FD009FA942 /* ZFWaterFallLayout.swift */; };
+		9190E6E7243CCA530093DDC8 /* ZFWaterFallCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190E6E6243CCA530093DDC8 /* ZFWaterFallCollectionViewController.swift */; };
 		919646481CE4B8EC00E770C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 919646471CE4B8EC00E770C8 /* main.m */; };
 		9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9196464A1CE4B8EC00E770C8 /* AppDelegate.m */; };
 		919646531CE4B8EC00E770C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919646521CE4B8EC00E770C8 /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		9119B5061ED3121300604082 /* RightAlignedFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAlignedFlowLayout.m; sourceTree = "<group>"; };
 		9119B50C1ED3127500604082 /* ZFFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFFlowLayout.h; sourceTree = "<group>"; };
 		9119B50D1ED3127500604082 /* ZFFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFFlowLayout.m; sourceTree = "<group>"; };
+		915F171B243C85FD009FA942 /* ZFWaterFallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFWaterFallLayout.swift; sourceTree = "<group>"; };
+		9190E6E6243CCA530093DDC8 /* ZFWaterFallCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFWaterFallCollectionViewController.swift; sourceTree = "<group>"; };
 		919646431CE4B8EC00E770C8 /* ZFFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		919646471CE4B8EC00E770C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		919646491CE4B8EC00E770C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		9119B4F61ED3121300604082 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				915F1718243C85B1009FA942 /* WaterFallLayout */,
 				9119B50C1ED3127500604082 /* ZFFlowLayout.h */,
 				9119B50D1ED3127500604082 /* ZFFlowLayout.m */,
 				DCDB68461ED3378500F479CD /* EffectPicture */,
@@ -162,6 +167,15 @@
 				9119B5061ED3121300604082 /* RightAlignedFlowLayout.m */,
 			);
 			path = RightAlignedFlowLayout;
+			sourceTree = "<group>";
+		};
+		915F1718243C85B1009FA942 /* WaterFallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				915F171B243C85FD009FA942 /* ZFWaterFallLayout.swift */,
+				9190E6E6243CCA530093DDC8 /* ZFWaterFallCollectionViewController.swift */,
+			);
+			path = WaterFallLayout;
 			sourceTree = "<group>";
 		};
 		9196463A1CE4B8EC00E770C8 = {
@@ -305,6 +319,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -370,12 +385,14 @@
 			files = (
 				910801102122BACE00698A5D /* ZFAxisFlowLayout.swift in Sources */,
 				9119B5071ED3121300604082 /* LayoutAttributeTools.m in Sources */,
+				915F171C243C85FD009FA942 /* ZFWaterFallLayout.swift in Sources */,
 				9196464B1CE4B8EC00E770C8 /* AppDelegate.m in Sources */,
 				9119B50A1ED3121300604082 /* Attribute.m in Sources */,
 				919646481CE4B8EC00E770C8 /* main.m in Sources */,
 				9119B50B1ED3121300604082 /* RightAlignedFlowLayout.m in Sources */,
 				9119B50E1ED3127500604082 /* ZFFlowLayout.m in Sources */,
 				DC2606951ED0A1A100451E75 /* ZFFlowLayoutVC.m in Sources */,
+				9190E6E7243CCA530093DDC8 /* ZFWaterFallCollectionViewController.swift in Sources */,
 				9119B5091ED3121300604082 /* LeftAlignedFlowLayout.m in Sources */,
 				DC66A3471ECC9046009669DB /* MainViewController.m in Sources */,
 			);
@@ -508,7 +525,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "ZFFlowLayout/ZFFlowLayout-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -526,7 +543,7 @@
 				PROVISIONING_PROFILE = "d8066971-f948-4c1c-afe2-9dc29c2d3c53";
 				PROVISIONING_PROFILE_SPECIFIER = WildcardProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "ZFFlowLayout/ZFFlowLayout-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
