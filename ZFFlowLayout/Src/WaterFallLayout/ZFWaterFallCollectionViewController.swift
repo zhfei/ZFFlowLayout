@@ -32,7 +32,8 @@ class ZFWaterFallCollectionViewController: UICollectionViewController {
     }
     
     func setupUI() {
-        self.collectionView?.backgroundColor = .white
+        self.collectionView?.backgroundColor = .clear
+        self.view.layer.contents = UIImage(named: "timg3.jpeg")?.cgImage;
         
         let reloadBtn = UIButton(type: UIButtonType.custom)
         reloadBtn.bounds = CGRect(x: 0, y: 0, width: 50, height: 50)
@@ -143,6 +144,8 @@ extension ZFWaterFallCollectionViewController {
         let contextLabel = cell.contentView.viewWithTag(10) as! UILabel
         contextLabel.text = String(format: "内容: %d", indexPath.row)
         
+        cell.layer.cornerRadius = 10;
+        cell.layer.masksToBounds = true;
         
         return cell
     }

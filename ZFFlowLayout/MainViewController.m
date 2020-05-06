@@ -52,12 +52,11 @@
 
 - (IBAction)WaterFallBtnAction:(UIButton *)sender {
     ZFWaterFallLayout * waterFallLayout = [[ZFWaterFallLayout alloc] init];
-    
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(80, 100);
-    flowLayout.minimumLineSpacing = 10;
-    flowLayout.minimumInteritemSpacing = 20;
-    flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+
+    waterFallLayout.rowSpacing = 10;
+    waterFallLayout.columnCount = 3;
+    waterFallLayout.colunmSpacing = 20;
+    waterFallLayout.sectionInset = UIEdgeInsetsMake(10, 10, 200, 10);
     
     ZFWaterFallCollectionViewController * vc = [[ZFWaterFallCollectionViewController alloc] initWithCollectionViewLayout:waterFallLayout];
     vc.collectionView.showsHorizontalScrollIndicator = NO;

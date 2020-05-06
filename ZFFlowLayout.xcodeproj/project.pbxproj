@@ -118,9 +118,9 @@
 		9119B4F61ED3121300604082 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				915F1718243C85B1009FA942 /* WaterFallLayout */,
 				9119B50C1ED3127500604082 /* ZFFlowLayout.h */,
 				9119B50D1ED3127500604082 /* ZFFlowLayout.m */,
+				915F1718243C85B1009FA942 /* WaterFallLayout */,
 				DCDB68461ED3378500F479CD /* EffectPicture */,
 				9119B5011ED3121300604082 /* Model */,
 				9119B4F71ED3121300604082 /* Common */,

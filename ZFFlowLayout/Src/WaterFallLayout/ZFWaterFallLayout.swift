@@ -10,12 +10,12 @@ import UIKit
 
 class ZFWaterFallLayout: UICollectionViewLayout {
     //列总数
-    open var columnCount = 3
-    open var colunmSpacing = 20
+    @objc var columnCount = 3
+    @objc var colunmSpacing = 20
     //行间距
-    open var rowSpacing = 10
+    @objc var rowSpacing = 10
     //section到collectionView的边距
-    open var sectionInset = UIEdgeInsetsMake(10, 10, -10, -10)
+    @objc var sectionInset:UIEdgeInsets = UIEdgeInsetsMake(10, 10, 100, 10)
     //每列最大Y值
     var maxYDict:[NSNumber: NSNumber] = [NSNumber: NSNumber]()
     //保留每个item对应的attributes
